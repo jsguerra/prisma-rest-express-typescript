@@ -1,8 +1,6 @@
 {
   "name": "prisma-rest-express-typescript",
   "version": "1.0.0",
-  "description": "This example shows how to implement a **REST API with TypeScript** using [Express](https://expressjs.com/) and [Prisma Client](https://www.prisma.io/docs/concepts/components/prisma-client). It is based on a SQLite database, you can find the database file with some dummy data at [`./prisma/dev.db`](./prisma/dev.db).",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +14,19 @@
   "bugs": {
     "url": "https://github.com/jsguerra/prisma-rest-express-typescript/issues"
   },
-  "homepage": "https://github.com/jsguerra/prisma-rest-express-typescript#readme"
+  "homepage": "https://github.com/jsguerra/prisma-rest-express-typescript#readme",
+  "dependencies": {
+    "@prisma/client": "^3.5.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.11.10",
+    "prisma": "^3.5.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  }
 }
