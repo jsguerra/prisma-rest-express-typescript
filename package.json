@@ -2,7 +2,7 @@
   "name": "prisma-rest-express-typescript",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "ts-node src/index.ts"
   },
   "repository": {
     "type": "git",
